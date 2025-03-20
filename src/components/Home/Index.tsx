@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <section className="bg-base text-text2">
       <div className="container mx-auto h-full w-fit py-20">
-        <div className="flex justify-between">
+        <div className="grid md:grid-cols-2 grid-cols-1 px-8">
           <div className="flex flex-1/2 items-center">
             <h1>
               Bem vindo a Escola de <br />
