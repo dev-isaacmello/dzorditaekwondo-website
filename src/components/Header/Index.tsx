@@ -26,24 +26,23 @@ export function Header() {
               ETKD<span className="text-primary">DZORDI</span>
             </h3>
           </div>
-          <ul className="text-md hidden items-center gap-4 font-semibold md:flex">
-            <li className="hover:text-primary transition-colors duration-300">
+          <ul className="text-md hidden items-center gap-2 font-semibold md:flex">
+            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70">
               <Link href="/">Inicio</Link>
             </li>
-            <li className="hover:text-primary transition-colors duration-300">
+            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70">
               <Link href="/about">Sobre</Link>
             </li>
-            <li className="hover:text-primary transition-colors duration-300">
+            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70">
               <Link href="/comps">Competições</Link>
             </li>
-            <li className="hover:text-primary transition-colors duration-300">
+            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70">
               <Link href="/plans">Planos</Link>
             </li>
           </ul>
           <Link
             href="/login"
-            className="bg-primary hover:bg-primary/80 hidden cursor-pointer items-center justify-center duration-200 rounded-md px-6 py-2 font-semibold md:flex"
-          >
+            className="border-base hover:bg-primary/80 hidden cursor-pointer items-center justify-center rounded-md border-2 px-6 py-2 font-semibold duration-200 hover:border-transparent md:flex shadow-lg shadow-base/70 hover:shadow-none"          >
             Login
           </Link>
           <Menu
@@ -51,7 +50,7 @@ export function Header() {
             onClick={() => SetIsMenuOpen(!isMenuOpen)}
           />
           <div
-            className={`bg-base transition-transofrm text-secondary absolute top-18 left-0 flex w-full transform flex-col items-center gap-6 text-lg font-semibold md:hidden ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
+            className={`bg-base transition-transofrm text-secondary absolute top-24 left-0 flex w-full transform flex-col items-center gap-6 text-lg font-semibold md:hidden ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
             style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
           >
             <Link
