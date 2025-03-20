@@ -26,7 +26,7 @@ export function Header() {
               ETKD<span className="text-primary">DZORDI</span>
             </h3>
           </div>
-          <ul className="hidden items-center gap-4 text-lg font-semibold md:flex">
+          <ul className="hidden items-center gap-4 text-md font-semibold md:flex">
             <li className="hover:text-primary transition-colors duration-300">
               <Link href="/">Inicio</Link>
             </li>
