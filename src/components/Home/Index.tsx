@@ -19,7 +19,7 @@ export default function Home() {
               <button>
                 <a
                   href="#"
-                  className="text-text1 mt-8 flex items-center gap-4 rounded-lg bg-secondary hover:bg-primary duration-200 px-10 py-4"
+                  className="text-text1 mt-8 flex items-center gap-4 rounded-lg bg-secondary hover:bg-primary duration-200 px-10 py-4 shadow-2xl shadow-secondary hover:shadow-none"
                 >
                   <WhatsappLogo size={24} className="text-base" />
                   <span className="font-bold">Entrar em Contato</span>
