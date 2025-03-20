@@ -4,7 +4,7 @@ export default function NotFound() {
   return (
     <section className="bg-base text-secondary">
       <div className="container mx-auto h-screen">
-        <div className="flex h-full flex-col items-center justify-center gap-6">
+        <div className="flex h-full flex-col items-center justify-center gap-6 text-center">
           <h1 className="text-4xl font-bold md:text-6xl">
             Página em Construção, Aguarde...
           </h1>

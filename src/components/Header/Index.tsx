@@ -42,7 +42,7 @@ export function Header() {
           </ul>
           <Link
             href="/login"
-            className="bg-primary hover:bg-primary/80 hidden cursor-pointer items-center justify-center rounded-md px-6 py-2 font-semibold md:flex"
+            className="bg-primary hover:bg-primary/80 hidden cursor-pointer items-center justify-center duration-200 rounded-md px-6 py-2 font-semibold md:flex"
           >
             Login
           </Link>
