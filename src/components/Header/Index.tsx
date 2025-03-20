@@ -26,7 +26,7 @@ export function Header() {
               ETKD<span className="text-primary">DZORDI</span>
             </h3>
           </div>
-          <ul className="hidden items-center gap-4 text-md font-semibold md:flex">
+          <ul className="text-md hidden items-center gap-4 font-semibold md:flex">
             <li className="hover:text-primary transition-colors duration-300">
               <Link href="/">Inicio</Link>
             </li>
@@ -40,11 +40,12 @@ export function Header() {
               <Link href="/plans">Planos</Link>
             </li>
           </ul>
-          <div className="bg-primary hover:bg-primary/80 hidden cursor-pointer items-center justify-center rounded-md px-6 py-2 font-semibold md:flex">
-            <Link href="/login" className="select-none">
-              Login
-            </Link>
-          </div>
+          <Link
+            href="/login"
+            className="bg-primary hover:bg-primary/80 hidden cursor-pointer items-center justify-center rounded-md px-6 py-2 font-semibold md:flex"
+          >
+            Login
+          </Link>
           <Menu
             className="block cursor-pointer md:hidden"
             onClick={() => SetIsMenuOpen(!isMenuOpen)}
