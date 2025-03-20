@@ -27,16 +27,16 @@ export function Header() {
             </h3>
           </div>
           <ul className="text-md hidden items-center gap-2 font-semibold md:flex">
-            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70">
+            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70 select-none cursor-pointer">
               <Link href="/">Inicio</Link>
             </li>
-            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70">
+            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70 select-none cursor-pointer">
               <Link href="/about">Sobre</Link>
             </li>
-            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70">
+            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70 select-none cursor-pointer">
               <Link href="/comps">Competições</Link>
             </li>
-            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70">
+            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70 select-none cursor-pointer">
               <Link href="/plans">Planos</Link>
             </li>
           </ul>
