@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LogoDzordi from "../../../public/LOGOTIPO.webp";
+import LogoDzordi from "../../../../public/LOGOTIPO.webp";
 import { WhatsappLogo } from "@phosphor-icons/react/dist/ssr";
 
 export default function Home() {

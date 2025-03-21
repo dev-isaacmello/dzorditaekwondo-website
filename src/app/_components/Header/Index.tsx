@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Menu } from "@deemlol/next-icons";
 import { useState } from "react";
 import Image from "next/image";
-import LogoDzordi from "../../../public/LOGOTIPO.webp";
+import LogoDzordi from "../../../../public/LOGOTIPO.webp";
 
 export function Header() {
   const [isMenuOpen, SetIsMenuOpen] = useState(false);
@@ -27,21 +27,33 @@ export function Header() {
             </h3>
           </div>
           <ul className="text-md hidden items-center gap-2 font-semibold md:flex">
-            <li className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg">
-              <Link href="/">Inicio</Link>
-            </li>
-            <li className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg">
-              <Link href="/about">Sobre</Link>
-            </li>
-            <li className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg">
-              <Link href="/comps">Competições</Link>
-            </li>
-            <li className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg">
-              <Link href="/plans">Planos</Link>
-            </li>
+            <Link
+              href="/"
+              className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg"
+            >
+              Inicio
+            </Link>
+            <Link
+              href="/pages/about"
+              className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg"
+            >
+              Sobre
+            </Link>
+            <Link
+              href="/pages/comps"
+              className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg"
+            >
+              Competições
+            </Link>
+            <Link
+              href="/pages/plans"
+              className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg"
+            >
+              Planos
+            </Link>
           </ul>
           <Link
-            href="/login"
+            href="/pages/login"
             className="border-base hover:bg-primary/80 shadow-base/70 hidden cursor-pointer items-center justify-center rounded-md border-2 px-6 py-2 font-semibold shadow-lg duration-200 hover:border-transparent hover:shadow-none md:flex"
           >
             Login
@@ -63,28 +75,28 @@ export function Header() {
               Inicio
             </Link>
             <Link
-              href="/about"
+              href="/pages/about"
               className="bg-base hover:bg-primary w-full p-4 text-center"
               onClick={() => SetIsMenuOpen(false)}
             >
               Sobre
             </Link>
             <Link
-              href="/comps"
+              href="/pages/comps"
               className="bg-base hover:bg-primary w-full p-4 text-center"
               onClick={() => SetIsMenuOpen(false)}
             >
               Competições
             </Link>
             <Link
-              href="/plans"
+              href="/pages/plans"
               className="bg-base hover:bg-primary w-full p-4 text-center"
               onClick={() => SetIsMenuOpen(false)}
             >
               Planos
             </Link>
             <Link
-              href="/login"
+              href="/pages/login"
               className="bg-base hover:bg-primary w-full p-4 text-center"
               onClick={() => SetIsMenuOpen(false)}
             >

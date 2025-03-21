@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Header } from "@/components/Header/Index";
+import { Header } from "@/app/_components/Header/Index";
 import "./globals.css";
 
 export const metadata: Metadata = {
