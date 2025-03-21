@@ -27,22 +27,23 @@ export function Header() {
             </h3>
           </div>
           <ul className="text-md hidden items-center gap-2 font-semibold md:flex">
-            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70 select-none cursor-pointer">
+            <li className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg">
               <Link href="/">Inicio</Link>
             </li>
-            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70 select-none cursor-pointer">
+            <li className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg">
               <Link href="/about">Sobre</Link>
             </li>
-            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70 select-none cursor-pointer">
+            <li className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg">
               <Link href="/comps">Competições</Link>
             </li>
-            <li className="hover:border-base hover:border-2 border-2 border-transparent rounded-md p-2 transition-colors duration-300 hover:shadow-lg hover:shadow-base/70 select-none cursor-pointer">
+            <li className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg">
               <Link href="/plans">Planos</Link>
             </li>
           </ul>
           <Link
             href="/login"
-            className="border-base hover:bg-primary/80 hidden cursor-pointer items-center justify-center rounded-md border-2 px-6 py-2 font-semibold duration-200 hover:border-transparent md:flex shadow-lg shadow-base/70 hover:shadow-none"          >
+            className="border-base hover:bg-primary/80 shadow-base/70 hidden cursor-pointer items-center justify-center rounded-md border-2 px-6 py-2 font-semibold shadow-lg duration-200 hover:border-transparent hover:shadow-none md:flex"
+          >
             Login
           </Link>
           <Menu
@@ -50,37 +51,42 @@ export function Header() {
             onClick={() => SetIsMenuOpen(!isMenuOpen)}
           />
           <div
-            className={`bg-base transition-transofrm text-secondary absolute top-21 left-0 flex w-full transform flex-col items-center gap-6 text-lg font-semibold md:hidden ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
-            style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
-            onClick={() => SetIsMenuOpen(false)}
+            className="bg-base transition-transofrm text-secondary absolute top-20 left-0 flex w-full transform flex-col items-center gap-6 text-lg font-semibold md:hidden"
+            onClick={() => SetIsMenuOpen(!isMenuOpen)}
+            style={{ display: isMenuOpen ? "flex" : "none" }}
           >
             <Link
               href="/"
               className="bg-base hover:bg-primary w-full p-4 text-center"
+              onClick={() => SetIsMenuOpen(false)}
             >
               Inicio
             </Link>
             <Link
               href="/about"
               className="bg-base hover:bg-primary w-full p-4 text-center"
+              onClick={() => SetIsMenuOpen(false)}
             >
               Sobre
             </Link>
             <Link
               href="/comps"
               className="bg-base hover:bg-primary w-full p-4 text-center"
+              onClick={() => SetIsMenuOpen(false)}
             >
               Competições
             </Link>
             <Link
               href="/plans"
               className="bg-base hover:bg-primary w-full p-4 text-center"
+              onClick={() => SetIsMenuOpen(false)}
             >
               Planos
             </Link>
             <Link
               href="/login"
               className="bg-base hover:bg-primary w-full p-4 text-center"
+              onClick={() => SetIsMenuOpen(false)}
             >
               Login
             </Link>

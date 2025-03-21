@@ -10,7 +10,7 @@ export default function About() {
             <p className="text-center text-4xl font-bold md:text-6xl">
               Escola de Taekwondo Dzordi
             </p>
-            <span className="text-secondary/40 font-semibold">
+            <span className="text-secondary/30 font-semibold">
               Fundada em 10 de Outubro de 2022
             </span>
           </div>
