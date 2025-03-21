@@ -1,4 +1,4 @@
-import { CompsCard } from "../_components/CompsCard";
+// import { CompsCard } from "../_components/CompsCard";
 
 export default function Comps() {
   return (
@@ -15,7 +15,7 @@ export default function Comps() {
             Última atualização em 21/03/2025.
           </span>
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-            <CompsCard />
+            {/* <CompsCard /> */}
           </div>
         </div>
       </div>
