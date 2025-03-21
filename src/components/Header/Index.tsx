@@ -50,7 +50,7 @@ export function Header() {
             onClick={() => SetIsMenuOpen(!isMenuOpen)}
           />
           <div
-            className={`bg-base transition-transofrm text-secondary absolute top-24 left-0 flex w-full transform flex-col items-center gap-6 text-lg font-semibold md:hidden ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
+            className={`bg-base transition-transofrm text-secondary absolute top-21 left-0 flex w-full transform flex-col items-center gap-6 text-lg font-semibold md:hidden ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
             style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
             onClick={() => SetIsMenuOpen(false)}
           >
