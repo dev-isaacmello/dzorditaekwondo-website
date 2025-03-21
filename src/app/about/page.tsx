@@ -2,18 +2,19 @@ export default function About() {
   return (
     <section>
       <div className="container mx-auto h-full w-fit px-8 py-16">
-        <div className="flex flex-col items-center gap-2">
-          <h1 className="text-secondary text-4xl font-bold md:text-6xl">
+        <div className="flex flex-col items-center gap-1">
+          <h1 className="text-secondary text-2xl font-bold md:text-4xl">
             Sobre Nós
           </h1>
-          <p className="text-center text-lg font-bold">
-            Escola de Taekwondo Dzordi{" "}
-            <span className="text-primary font-semibold">
-              Fundada em 10 de Outubro de 2022
-            </span>
+          <p className="text-center text-4xl md:text-6xl font-bold">
+            Escola de Taekwondo Dzordi
           </p>
-          <div className="mt-10 grid grid-cols-1 gap-4 space-y-8 md:grid-cols-2">
-            <div className="flex w-[600px] flex-col gap-6">
+          <span className="text-secondary/40 font-semibold">
+            Fundada em 10 de Outubro de 2022
+          </span>
+
+          <div className="center mt-10 grid grid-cols-1 gap-4 space-y-8 md:grid-cols-2">
+            <div className="from-base flex flex-col gap-6 rounded-md bg-gradient-to-br to-white p-4 md:w-[600px]">
               <h2 className="text-4xl font-bold">Sobre os Treinos</h2>
               <p>
                 Treino Misto para Crianças e Adultos Homens e Mulheres: Focado
@@ -27,16 +28,18 @@ export default function About() {
                 Físicos, entre outros.
               </p>
             </div>
-            <div className="flex w-[600px] flex-col gap-6">
-              <h2 className="text-end text-4xl font-bold">Nossa Visão</h2>
-              <p className="text-end">
+            <div className="md:w-[600px] rounded-md from-base flex flex-col flex-wrap gap-6 bg-gradient-to-br to-white p-4">
+              <h2 className="text-start text-4xl font-bold md:text-end">
+                Nossa Visão
+              </h2>
+              <p className="text-start md:text-end">
                 Ser um exemplo de excelência no ensino do Taekwondo, formando
                 alunos não apenas como atletas, mas como indivíduos íntegros,
                 disciplinados e preparados para enfrentar desafios dentro e fora
                 dos tatames.
               </p>
             </div>
-            <div>
+            <div className="md:w-[600px] rounded-md from-base flex flex-col gap-6 bg-gradient-to-br to-white p-4">
               <h2 className="text-4xl font-bold">Nossa Missão</h2>
               <p>
                 Transmitir os princípios e valores do Taekwondo, promovendo o
