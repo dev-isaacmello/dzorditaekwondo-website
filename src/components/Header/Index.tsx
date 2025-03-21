@@ -11,7 +11,7 @@ export function Header() {
 
   return (
     <header className="bg-bg-primary text-text1">
-      <div className="container mx-auto px-8 py-6">
+      <div className="container mx-auto px-8 py-4">
         <nav className="flex h-full items-center justify-between">
           <div className="flex items-center gap-2">
             <Image
