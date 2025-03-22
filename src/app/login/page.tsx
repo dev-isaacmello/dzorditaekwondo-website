@@ -13,7 +13,7 @@ export default function LoginPage() {
 
   const users = [
     { username: "aluno", password: "dzordi" },
-    { username: "user", password: "senha123" },
+    { username: "admin", password: "admin" },
   ];
 
   const handleLogin = (e: React.FormEvent) => {
