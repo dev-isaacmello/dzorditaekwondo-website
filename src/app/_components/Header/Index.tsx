@@ -34,26 +34,26 @@ export function Header() {
               Inicio
             </Link>
             <Link
-              href="/pages/about"
+              href="/about"
               className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg"
             >
               Sobre
             </Link>
             <Link
-              href="/pages/comps"
+              href="/comps"
               className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg"
             >
               Competições
             </Link>
             <Link
-              href="/pages/plans"
+              href="/plans"
               className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg"
             >
               Planos
             </Link>
           </ul>
           <Link
-            href="/pages/login"
+            href="/login"
             className="border-base hover:bg-primary/80 shadow-base/70 hidden cursor-pointer items-center justify-center rounded-md border-2 px-6 py-2 font-semibold shadow-lg duration-200 hover:border-transparent hover:shadow-none md:flex"
           >
             Login
@@ -75,28 +75,28 @@ export function Header() {
               Inicio
             </Link>
             <Link
-              href="/pages/about"
+              href="/about"
               className="bg-base hover:bg-primary w-full p-4 text-center"
               onClick={() => SetIsMenuOpen(false)}
             >
               Sobre
             </Link>
             <Link
-              href="/pages/comps"
+              href="/comps"
               className="bg-base hover:bg-primary w-full p-4 text-center"
               onClick={() => SetIsMenuOpen(false)}
             >
               Competições
             </Link>
             <Link
-              href="/pages/plans"
+              href="/plans"
               className="bg-base hover:bg-primary w-full p-4 text-center"
               onClick={() => SetIsMenuOpen(false)}
             >
               Planos
             </Link>
             <Link
-              href="/pages/login"
+              href="/login"
               className="bg-base hover:bg-primary w-full p-4 text-center"
               onClick={() => SetIsMenuOpen(false)}
             >
