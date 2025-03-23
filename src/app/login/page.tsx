@@ -2,8 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import logoDzordi from "../../../public/LOGOTIPO.webp";
-import Image from "next/image";
+import TransitionsModal from "../_components/Modal/Modal";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -39,23 +38,22 @@ export default function LoginPage() {
   };
 
   return (
-    <section>
+    <section className="">
       <div className="container mx-auto h-full w-fit px-8 py-16">
         {errorMessage && (
-          <p className="fixed bottom-10 left-10 rounded-md border-2 border-gray-700 bg-red-500 p-6 text-center text-base font-bold">
+          <p className="fixed bottom-10 left-10 rounded-md bg-red-500 p-6 text-center text-base font-bold shadow-lg shadow-black/40">
             {errorMessage}
           </p>
         )}
-        <div className="flex h-full flex-1 flex-col justify-center rounded-2xl border-2 border-gray-300 bg-white py-12 md:w-[calc(100vh/1)] w-[calc(100vh/2)] px-8 shadow-lg">
-          <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-            <Image
-              alt="Your Company"
-              src={logoDzordi}
-              className="mx-auto h-18 w-auto"
-            />
-          </div>
+        <div className="flex h-full w-[calc(100vh/2)] flex-1 flex-col justify-center rounded-2xl border-2 border-gray-300 bg-white px-8 py-12 shadow-2xl md:w-[calc(100vh/2)]">
+          <h2 className="mt-4 text-center text-2xl font-bold text-gray-900">
+            Login
+          </h2>
+          <span className="text-center text-sm text-gray-400">
+            Insira suas credencias de Aluno ou Administrador
+          </span>
 
-          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+          <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
             <form
               action="#"
               method="POST"
@@ -105,10 +103,11 @@ export default function LoginPage() {
 
               <button
                 type="submit"
-                className="bg-primary hover:bg-secondary block w-full cursor-pointer rounded-md px-3 py-1.5 text-base outline-1 -outline-offset-1 outline-gray-300 transition-colors duration-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                className="bg-primary hover:bg-secondary block h-12 w-full cursor-pointer rounded-md px-3 py-1.5 text-2xl text-base font-bold transition-colors duration-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
               >
                 Entrar
               </button>
+              <TransitionsModal />
             </form>
           </div>
         </div>
