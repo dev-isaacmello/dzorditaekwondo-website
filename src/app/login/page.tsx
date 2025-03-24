@@ -45,71 +45,58 @@ export default function LoginPage() {
             {errorMessage}
           </p>
         )}
-        <div className="flex h-full w-[calc(100vh/2)] flex-1 flex-col justify-center rounded-2xl border-2 border-gray-300 bg-white px-8 py-12 shadow-2xl md:w-[calc(100vh/2)]">
-          <h2 className="mt-4 text-center text-2xl font-bold text-gray-900">
-            Login
-          </h2>
-          <span className="text-center text-sm text-gray-400">
-            Insira suas credencias de Aluno ou Administrador
-          </span>
+        <div className="flex h-full w-[calc(100vw/1;5)] flex-1 flex-col justify-center rounded-2xl border-2 border-gray-300 bg-white px-8 py-12 shadow-2xl md:w-[calc(100vw/2)]">
+          <div className="flex flex-col items-center gap-6">
+            <h2 className="mt-4 text-center text-2xl font-bold text-gray-900 md:text-4xl">
+              Login
+            </h2>
+            <span className="text-center text-xs text-gray-400 md:text-sm">
+              Insira suas credencias de Aluno ou Administrador
+            </span>
 
-          <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form
-              action="#"
-              method="POST"
-              className="space-y-6"
-              onSubmit={handleLogin}
-            >
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm/6 font-medium text-gray-900"
-                >
-                  Usuário
-                </label>
-                <div className="mt-2">
+            <div className="mt-4 sm:mx-auto sm:w-full sm:max-w-sm">
+              <form
+                action="#"
+                method="POST"
+                className="space-y-6"
+                onSubmit={handleLogin}
+              >
+                <div>
                   <input
                     type="text"
                     id="username"
                     name="username"
                     value={username}
+                    placeholder="Usuário"
                     onChange={(e) => setUsername(e.target.value)}
-                    className="block w-full rounded-md bg-white px-3 py-1.5 text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                    className="block w-full rounded-t-md bg-white px-3 py-4 text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                   />
-                </div>
-              </div>
 
-              <div>
-                <div className="flex items-center justify-between">
-                  <label
-                    htmlFor="password"
-                    className="block text-sm/6 font-medium text-gray-900"
-                  >
-                    Senha
-                  </label>
-                </div>
-                <div className="mt-2">
                   <input
                     type="password"
                     id="password"
                     name="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Senha"
                     required
-                    className="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                    className="block w-full rounded-b-md bg-white px-3 py-4 text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                   />
                 </div>
-              </div>
 
-              <button
-                type="submit"
-                className="bg-primary hover:bg-secondary block h-12 w-full cursor-pointer rounded-md px-3 py-1.5 text-2xl text-base font-bold transition-colors duration-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
-              >
-                Entrar
-              </button>
-              <TransitionsModal />
-            </form>
+                <button
+                  type="submit"
+                  className="bg-primary hover:bg-secondary block h-12 w-full cursor-pointer rounded-md px-3 py-1.5 text-2xl text-base font-bold transition-colors duration-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                >
+                  Entrar
+                </button>
+                <TransitionsModal />
+              </form>
+            </div>
           </div>
+        </div>
+        <div>
+          <div></div>
         </div>
       </div>
     </section>

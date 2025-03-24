@@ -29,7 +29,7 @@ export default function TransitionsModal() {
         }}
       >
         <Fade in={open}>
-          <Box className="absolute flex w-100 flex-col items-center justify-center gap-6 rounded-lg bg-white p-12 shadow-lg top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">
+          <Box className="absolute flex w-100 flex-col items-center justify-center gap-6 rounded-lg bg-white p-8 shadow-lg top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">
             <h2 className="text-center">
               Você este prestes a ser redirecionado para o Whatsapp!
             </h2>
