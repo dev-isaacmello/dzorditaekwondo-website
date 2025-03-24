@@ -18,7 +18,7 @@ const compsF = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     name: "Open Fight",
     date: "2022-02-02",
     location: "São Paulo",
@@ -36,7 +36,7 @@ const compsF = [
     ],
   },
   {
-    id: 1,
+    id: 3,
     name: "Open Fight",
     date: "2022-02-02",
     location: "São Paulo",
@@ -54,7 +54,7 @@ const compsF = [
     ],
   },
   {
-    id: 1,
+    id: 4,
     name: "Open Fight",
     date: "2022-02-02",
     location: "São Paulo",
@@ -72,7 +72,7 @@ const compsF = [
     ],
   },
   {
-    id: 1,
+    id: 5,
     name: "Open Fight",
     date: "2022-02-02",
     location: "São Paulo",
@@ -90,7 +90,7 @@ const compsF = [
     ],
   },
   {
-    id: 1,
+    id: 6,
     name: "Open Fight",
     date: "2022-02-02",
     location: "São Paulo",
@@ -115,10 +115,10 @@ export function CompsCard() {
       {compsF.map((comp, index) => (
         <div
           key={index}
-          className="bg-bg-primary flex flex-col items-center gap-2 rounded-lg p-4 text-base border-2 border-text1 md:w-[400px] w-[calc(100vh/2)]"
+          className="bg-base shadow-lg border-text1 flex w-[calc(100vw/1.5)] flex-col items-center gap-2 rounded-lg border-2 p-4 md:w-[400px]"
         >
-          <h5>{comp.name}</h5>
-          <p>{comp.date}</p>
+          <h5 className="font-bold text-2xl">{comp.name}</h5>
+          <p className="text-gray-400">{comp.date}</p>
           <p>{comp.location}</p>
           <div>
             {comp.participants &&

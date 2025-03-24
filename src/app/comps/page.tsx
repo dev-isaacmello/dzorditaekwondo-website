@@ -1,4 +1,4 @@
-// import { CompsCard } from "../_components/CompsCard";
+import { CompsCard } from "../_components/CompsCard/CompsCard";
 
 export default function Comps() {
   return (
@@ -12,10 +12,10 @@ export default function Comps() {
             Competições
           </p>
           <span className="text-secondary/30 mt-2 font-semibold">
-            Última atualização em 21/03/2025.
+            Última atualização em 24/03/2025.
           </span>
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-            {/* <CompsCard /> */}
+            <CompsCard />
           </div>
         </div>
       </div>

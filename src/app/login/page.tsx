@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import TransitionsModal from "../_components/Modal/Modal";
+import { LoginAlert } from "../_components/Modal/AlerteLogin";
 
 export default function LoginPage() {
   const router = useRouter();
@@ -50,7 +50,7 @@ export default function LoginPage() {
             <h2 className="mt-4 text-center text-2xl font-bold text-gray-900 md:text-4xl">
               Login
             </h2>
-            <span className="text-center text-xs text-gray-400 md:text-sm">
+            <span className="text-center text-xs w-60  md:w-fit  text-gray-400 md:text-sm">
               Insira suas credencias de Aluno ou Administrador
             </span>
 
@@ -86,11 +86,11 @@ export default function LoginPage() {
 
                 <button
                   type="submit"
-                  className="bg-primary hover:bg-secondary block h-12 w-full cursor-pointer rounded-md px-3 py-1.5 text-2xl text-base font-bold transition-colors duration-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
+                  className="bg-primary hover:bg-secondary block h-12 w-full cursor-pointer rounded-md px-3 py-1.5 text-1xl md:text-2xl text-base font-bold transition-colors duration-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"
                 >
                   Entrar
                 </button>
-                <TransitionsModal />
+                <LoginAlert />
               </form>
             </div>
           </div>
