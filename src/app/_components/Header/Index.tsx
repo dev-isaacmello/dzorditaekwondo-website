@@ -45,12 +45,6 @@ export function Header() {
             >
               Competições
             </Link>
-            <Link
-              href="/plans"
-              className="hover:border-base hover:shadow-base/70 cursor-pointer rounded-md border-2 border-transparent p-2 transition-colors duration-300 select-none hover:border-2 hover:shadow-lg"
-            >
-              Planos
-            </Link>
           </ul>
           <Link
             href="/login"
@@ -87,13 +81,6 @@ export function Header() {
               onClick={() => SetIsMenuOpen(false)}
             >
               Competições
-            </Link>
-            <Link
-              href="/plans"
-              className="bg-base hover:bg-primary w-full p-4 text-center"
-              onClick={() => SetIsMenuOpen(false)}
-            >
-              Planos
             </Link>
             <Link
               href="/login"

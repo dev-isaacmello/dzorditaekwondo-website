@@ -14,9 +14,9 @@ export default function Comps() {
           <span className="text-secondary/30 mt-2 font-semibold">
             Última atualização em 24/03/2025.
           </span>
-          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-            <CompsCard />
-          </div>
+        </div>
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+          <CompsCard />
         </div>
       </div>
     </section>

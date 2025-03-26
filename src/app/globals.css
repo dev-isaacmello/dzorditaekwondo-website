@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
 
 @theme {
     --color-bg-primary: #010A26;
@@ -14,4 +13,5 @@
 
     --color-text1: #FFFFFF;
     --color-text2: #0D0D0D;
+
 }
