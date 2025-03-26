@@ -112,9 +112,9 @@ const compsF = [
 export function CompsCard() {
   return (
     <>
-      {compsF.map((comp, index) => (
+      {compsF.map((comp, id) => (
         <div
-          key={index}
+          key={id}
           className="bg-base shadow-lg border-text1 flex w-[calc(100vw/1.5)] flex-col items-center gap-2 rounded-lg border-2 p-4 md:w-[400px]"
         >
           <h5 className="font-bold text-2xl">{comp.name}</h5>
@@ -122,8 +122,8 @@ export function CompsCard() {
           <p>{comp.location}</p>
           <div>
             {comp.participants &&
-              comp.participants.map((participant, index) => (
-                <div key={index} className="flex flex-col items-center">
+              comp.participants.map((participant, id) => (
+                <div key={id} className="flex flex-col items-center">
                   <p>
                     {participant.name} {participant.award}
                   </p>
